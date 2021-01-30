@@ -4,6 +4,7 @@ xVelocity = 0;
 yVelocity = 0;
 newX = 0;
 newY = 0;
+circleIncrease = false;
 depth = -10;
 
 //Light

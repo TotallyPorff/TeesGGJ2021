@@ -26,6 +26,14 @@ if (gameState == state.playing) {
 	if (newY < room_height && newY - sprite_height > 0) {
 		y = newY;
 	}
+	
+	//Colliding with item
+	if (collision_circle(x, y, 8, Obj_IOH, true, true) != noone) {
+		itemCollide = collision_circle(x, y, 8, Obj_IOH, true, true);
+		instance_destroy(itemCollide);
+		circleIncrease = true;
+		alarm[0] = 1 * room_speed;
+	}
 }
 //Start Panicking
 if (gameState == state.panicStart) {

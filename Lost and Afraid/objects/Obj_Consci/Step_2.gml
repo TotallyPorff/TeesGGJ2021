@@ -1,6 +1,10 @@
 /// @description Light Code
 if (gameState == state.playing) {
-	lightRadius = Approach(lightRadius, 32, 8 / 60);
+	if (circleIncrease) {
+		lightRadius = Approach(lightRadius, 200, 16 / room_speed);
+	} else {
+		lightRadius = Approach(lightRadius, 32, 4 / room_speed);
+	}
 	
 	//Change state
 	if (lightRadius <= 32) {
