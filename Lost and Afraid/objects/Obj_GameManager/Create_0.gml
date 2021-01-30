@@ -1,4 +1,5 @@
 bottomText = "Made by Thomas K for the 2021 Global Game Jam, using Gamemaker 2, Aseprite, & FLStudio"
+instance_create_depth(0, 0, 0, Obj_MusicManager);
 
 //Set Window
 window_set_caption("Lost and Afraid");
