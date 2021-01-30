@@ -15,6 +15,7 @@
     {"id":{"name":"Spr_FadeWhite","path":"sprites/Spr_FadeWhite/Spr_FadeWhite.yy",},"order":15,},
     {"id":{"name":"Spr_Shade","path":"sprites/Spr_Shade/Spr_Shade.yy",},"order":3,},
     {"id":{"name":"Fnt_Main","path":"fonts/Fnt_Main/Fnt_Main.yy",},"order":0,},
+    {"id":{"name":"Obj_GameManager","path":"objects/Obj_GameManager/Obj_GameManager.yy",},"order":6,},
     {"id":{"name":"Obj_Another","path":"objects/Obj_Another/Obj_Another.yy",},"order":3,},
     {"id":{"name":"ApproachFunc","path":"scripts/ApproachFunc/ApproachFunc.yy",},"order":0,},
     {"id":{"name":"Rm_Found","path":"rooms/Rm_Found/Rm_Found.yy",},"order":1,},

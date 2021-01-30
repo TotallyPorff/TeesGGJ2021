@@ -1,4 +1,4 @@
-//Set Variable
+//Set Variables
 fadeSpeed = 0.2/60;
 draw_set_font(Fnt_Main);
 
@@ -10,3 +10,7 @@ line3 = "but someday you will be found"
 line3Alpha = 0;
 line4 = "and everything will be ok."
 line4Alpha = 0;
+
+timeGrabbed = false;
+line5 = "You held out for a total of ";
+line5Alpha = 0;
