@@ -1,5 +1,5 @@
 //Set Variables
-fadeSpeed = 0.2/60;
+fadeSpeed = 0.5 / room_speed;
 draw_set_font(Fnt_Main);
 
 line1 = "Have patience.";

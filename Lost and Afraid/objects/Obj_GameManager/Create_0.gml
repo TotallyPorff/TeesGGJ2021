@@ -14,8 +14,11 @@ if (room == Rm_Darkness) {
 	alarm[0] = 1 * room_speed;
 }
 
-//Variables
-numberOfItems = 5;
+//Managing number of items
+numberOfItems = 10;
+if (room == Rm_Darkness) {
+	alarm[3] = 30 * room_speed;
+}
 
 //create smoke
 generateSmoke = true;
