@@ -7,12 +7,14 @@ newY = 0;
 
 //Light
 lightRadius = 200;
+fadeAlpha = 0;
 
 //Game States
 enum state {
-	menu,
 	playing,
-	found
+	panicStart,
+	panicking,
+	calm
 }
 gameState = state.playing;
 

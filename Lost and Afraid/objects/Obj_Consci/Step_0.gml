@@ -1,10 +1,9 @@
 /// @description Walking Code
+yVelocity = 0;
+xVelocity = 0;
 
 if (gameState == state.playing) {
 	//Walking
-	yVelocity = 0;
-	xVelocity = 0;
-
 	if (keyboard_check(ord("W"))) {
 		yVelocity = Approach(yVelocity, -1, 1);
 	}
@@ -26,6 +25,41 @@ if (gameState == state.playing) {
 	}
 	if (newY < room_height && newY - sprite_height > 0) {
 		y = newY;
+	}
+}
+//Start Panicking
+if (gameState == state.panicStart) {
+	if (image_index >= image_number - 2) {
+		gameState = state.panicking;
+		sprite_index = Spr_Consci_Panic;
+		image_index = 0;
+	}
+}
+//Panic
+if (gameState == state.panicking) {
+	if (!instance_exists(Obj_Another)) {
+		instance_create_depth(x + 240, y, -10, Obj_Another);
+	}
+	
+	//Check if other is in range
+	if (Obj_Another.x <= x + 28) {
+		sprite_index = Spr_Consci_Calm;
+		image_index = 0;
+		gameState = state.calm;
+	}
+}
+//Calm
+if (gameState == state.calm) {
+	if (image_index >= image_number - 2) {
+		image_speed = 0;
+		
+		if (!instance_exists(Obj_FadeWhite)) {
+			instance_create_depth(0, 0, -1000, Obj_FadeWhite);
+		}
+		
+		if (Obj_FadeWhite.image_alpha == 1) {
+			room = Rm_Found;
+		}
 	}
 }
 

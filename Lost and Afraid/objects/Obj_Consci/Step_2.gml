@@ -1,6 +1,15 @@
 /// @description Light Code
 if (gameState == state.playing) {
-	lightRadius = Approach(lightRadius, 32, 4 / 60);
+	lightRadius = Approach(lightRadius, 32, 16 / 60);
+	
+	//Change state
+	if (lightRadius <= 32) {
+		gameState = state.panicStart;
+		instance_destroy(Obj_Spikes);
+		sprite_index = Spr_Consci_PanicStart;
+		image_index = 0;
+		image_xscale = 1;
+	}
 }
 
 gpu_set_blendmode(bm_subtract);

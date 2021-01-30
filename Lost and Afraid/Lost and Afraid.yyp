@@ -1,14 +1,23 @@
 {
   "resources": [
+    {"id":{"name":"Spr_Consci_Calm","path":"sprites/Spr_Consci_Calm/Spr_Consci_Calm.yy",},"order":7,},
     {"id":{"name":"Spr_Consci_Idle","path":"sprites/Spr_Consci_Idle/Spr_Consci_Idle.yy",},"order":0,},
+    {"id":{"name":"Obj_FadeWhite","path":"objects/Obj_FadeWhite/Obj_FadeWhite.yy",},"order":4,},
     {"id":{"name":"Obj_Spikes","path":"objects/Obj_Spikes/Obj_Spikes.yy",},"order":2,},
     {"id":{"name":"Obj_Consci","path":"objects/Obj_Consci/Obj_Consci.yy",},"order":0,},
     {"id":{"name":"Spr_Spikes","path":"sprites/Spr_Spikes/Spr_Spikes.yy",},"order":4,},
     {"id":{"name":"Spr_Tile","path":"sprites/Spr_Tile/Spr_Tile.yy",},"order":2,},
     {"id":{"name":"Spr_Consci_Walk","path":"sprites/Spr_Consci_Walk/Spr_Consci_Walk.yy",},"order":1,},
+    {"id":{"name":"Spr_Consci_PanicStart","path":"sprites/Spr_Consci_PanicStart/Spr_Consci_PanicStart.yy",},"order":5,},
     {"id":{"name":"Obj_Shadows","path":"objects/Obj_Shadows/Obj_Shadows.yy",},"order":1,},
+    {"id":{"name":"Obj_EndText","path":"objects/Obj_EndText/Obj_EndText.yy",},"order":5,},
+    {"id":{"name":"Spr_Consci_Panic","path":"sprites/Spr_Consci_Panic/Spr_Consci_Panic.yy",},"order":6,},
+    {"id":{"name":"Spr_FadeWhite","path":"sprites/Spr_FadeWhite/Spr_FadeWhite.yy",},"order":15,},
     {"id":{"name":"Spr_Shade","path":"sprites/Spr_Shade/Spr_Shade.yy",},"order":3,},
+    {"id":{"name":"Fnt_Main","path":"fonts/Fnt_Main/Fnt_Main.yy",},"order":0,},
+    {"id":{"name":"Obj_Another","path":"objects/Obj_Another/Obj_Another.yy",},"order":3,},
     {"id":{"name":"ApproachFunc","path":"scripts/ApproachFunc/ApproachFunc.yy",},"order":0,},
+    {"id":{"name":"Rm_Found","path":"rooms/Rm_Found/Rm_Found.yy",},"order":1,},
     {"id":{"name":"Rm_Darkness","path":"rooms/Rm_Darkness/Rm_Darkness.yy",},"order":0,},
   ],
   "Options": [
@@ -26,6 +35,7 @@
   },
   "RoomOrderNodes": [
     {"roomId":{"name":"Rm_Darkness","path":"rooms/Rm_Darkness/Rm_Darkness.yy",},},
+    {"roomId":{"name":"Rm_Found","path":"rooms/Rm_Found/Rm_Found.yy",},},
   ],
   "Folders": [
     {"folderPath":"folders/Sprites.yy","order":1,"resourceVersion":"1.0","name":"Sprites","tags":[],"resourceType":"GMFolder",},
