@@ -1,3 +1,8 @@
+bottomText = "Made by Thomas K for the 2021 Global Game Jam, using Gamemaker 2, Aseprite, & FLStudio"
+
+//Set Window
+window_set_caption("Lost and Afraid");
+
 //Set time
 globalvar time;
 if (room == Rm_Darkness) {
@@ -13,6 +18,7 @@ if (room == Rm_Darkness) {
 numberOfItems = 5;
 
 //create smoke
+generateSmoke = true;
 if (room == Rm_Main) {
 	alarm[2] = 0.05 * room_speed;
 }

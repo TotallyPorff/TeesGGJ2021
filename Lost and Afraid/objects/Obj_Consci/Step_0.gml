@@ -23,7 +23,7 @@ if (gameState == state.playing) {
 	if (newX + (sprite_width/2) < room_width && newX + (sprite_width/2) > 0) {
 		x = newX;
 	}
-	if (newY < room_height && newY - sprite_height > 0) {
+	if (newY < room_height && newY > 0) {
 		y = newY;
 	}
 	
@@ -50,7 +50,7 @@ if (gameState == state.panicking) {
 	}
 	
 	//Check if other is in range
-	if (Obj_Another.x <= x + 28) {
+	if (Obj_Another.x <= x + 24) {
 		sprite_index = Spr_Consci_Calm;
 		image_index = 0;
 		gameState = state.calm;

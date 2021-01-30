@@ -15,9 +15,15 @@ if (room == Rm_Darkness) {
 
 if (room == Rm_Main) {
 	if (keyboard_check_pressed(vk_space)) {
-		Obj_GameTitle.image_alpha = 0;
-		Obj_Controls.image_alpha = 0;
-		Obj_Start.image_alpha = 0;
+		generateSmoke = false;
+		instance_destroy(Obj_Smoke);
+		
+		instance_destroy(Obj_Controls);
+		instance_destroy(Obj_GameTitle);
+		instance_destroy(Obj_Start);
+		
+		bottomText = "";
+		
 		alarm[1] = 1 * room_speed;
 	}
 }
