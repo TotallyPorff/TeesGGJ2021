@@ -32,6 +32,9 @@ if (gameState == state.playing) {
 		itemCollide = collision_circle(x, y, 8, Obj_IOH, true, true);
 		instance_destroy(itemCollide);
 		circleIncrease = true;
+		audio_play_sound(SFX_Grab, 0, false);
+		
+		//reset circle direction
 		alarm[0] = 1 * room_speed;
 	}
 }

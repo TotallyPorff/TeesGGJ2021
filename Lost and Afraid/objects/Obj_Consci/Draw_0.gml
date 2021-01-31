@@ -4,8 +4,16 @@
 if (gameState == state.playing) {
 	if (xVelocity != 0 || yVelocity != 0) {
 		sprite_index = Spr_Consci_Walk;
+		//Play footsteps
+		if (!audio_is_playing(footsteps)) {
+			footsteps = audio_play_sound(footsteps, 0, true);
+		}
 	} else {
 		sprite_index = Spr_Consci_Idle;
+		//stop footsteps
+		if (audio_is_playing(footsteps)) {
+			audio_stop_sound(footsteps);
+		}
 	}
 
 	if (xVelocity > 0) {

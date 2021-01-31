@@ -20,3 +20,8 @@ if (instance_exists(Obj_GameManager) && !timeGrabbed) {
 if (line5Alpha != 1 && line4Alpha == 1) {
 	line5Alpha = Approach(line5Alpha, 1, fadeSpeed);
 }
+
+//R to restart
+if (line6Alpha != 1 && line4Alpha == 1) {
+	line6Alpha = Approach(line6Alpha, 1, fadeSpeed);
+}

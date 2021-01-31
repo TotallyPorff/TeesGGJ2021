@@ -29,12 +29,12 @@ if (room == Rm_Darkness) {
 			sawBassVol = 1 - (((Obj_Consci.lightRadius - 75) * 2) / 100);
 		}
 		//Adjust sqrBass Volume
-		if (Obj_Consci.lightRadius - 50 >= 0) {
-			sqrBassVol = 1 - (((Obj_Consci.lightRadius - 50) * 2) / 100);
+		if (Obj_Consci.lightRadius - 25 >= 0) {
+			sqrBassVol = 1 - (((Obj_Consci.lightRadius - 25) * 2) / 100);
 		}
 		//Adjust kick Volume
 		if (Obj_Consci.lightRadius - 25 >= 0) {
-			kickVol = 1 - (((Obj_Consci.lightRadius - 25) * 4) / 100);
+			kickVol = 1 - (((Obj_Consci.lightRadius - 25) * 1) / 100);
 		}
 	}
 	

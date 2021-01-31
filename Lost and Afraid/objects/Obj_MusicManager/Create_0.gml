@@ -35,4 +35,7 @@ if (room == Rm_Darkness) {
 	
 	kick = audio_play_sound(Snd_Anxiety_Kick, 0, true);
 	audio_sound_gain(kick, kickVol, 0);
+	
+	//Wind SFX
+	audio_play_sound(SFX_Wind, 0, true);
 }

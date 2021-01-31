@@ -11,6 +11,10 @@ depth = -10;
 lightRadius = 200;
 fadeAlpha = 0;
 
+//Walking SFX
+footsteps = audio_play_sound(SFX_Footsteps, 0, true);
+audio_stop_sound(footsteps);
+
 //Game States
 enum state {
 	playing,
