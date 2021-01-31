@@ -37,6 +37,7 @@
     {"id":{"name":"Spr_GameTitle","path":"sprites/Spr_GameTitle/Spr_GameTitle.yy",},"order":14,},
     {"id":{"name":"Spr_Shade","path":"sprites/Spr_Shade/Spr_Shade.yy",},"order":3,},
     {"id":{"name":"Snd_Anxiety_SawBass","path":"sounds/Snd_Anxiety_SawBass/Snd_Anxiety_SawBass.yy",},"order":2,},
+    {"id":{"name":"Snd_Whispers","path":"sounds/Snd_Whispers/Snd_Whispers.yy",},"order":10,},
     {"id":{"name":"Snd_Anxiety_Kick","path":"sounds/Snd_Anxiety_Kick/Snd_Anxiety_Kick.yy",},"order":1,},
     {"id":{"name":"SFX_Wind","path":"sounds/SFX_Wind/SFX_Wind.yy",},"order":7,},
     {"id":{"name":"Obj_Start","path":"objects/Obj_Start/Obj_Start.yy",},"order":10,},
